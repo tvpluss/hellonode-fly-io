@@ -12,5 +12,8 @@ app.get(["/", "/:name"], (req, res) => {
   }
 });
 
-app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`))
+app.get("ping", (req, res) => {
+  res.send("pong");
+});
 
+app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`));
