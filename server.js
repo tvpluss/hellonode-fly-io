@@ -9,5 +9,5 @@ app.get(["/"], (req, res) => {
   greeting = "<h1>Hello From Node on Fly!</h1>";
   res.send(greeting);
 });
-
+console.log("Thai vjp");
 app.listen(port, () => console.log(`HelloNode app listening on port ${port}!`));
